@@ -8,4 +8,4 @@ Get-AzVMExtensionImageType -Location $Location -PublisherName $Publisher
 
 # Get the extension versions for the specified type in your location
 $Type = 'CustomScriptExtension'
-(Get-AzVMExtensionImage -Location $Location -PublisherName Microsoft.Compute -Type $Type).Version
+(Get-AzVMExtensionImage -Location $Location -PublisherName $Publisher -Type $Type).Version
